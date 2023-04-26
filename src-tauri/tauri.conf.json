@@ -22,7 +22,7 @@
         "all": false,
         "readFile": true,
         "readDir": true,
-        "exists": "true"
+        "exists": true
       },
       "dialog": {
         "all": false,
