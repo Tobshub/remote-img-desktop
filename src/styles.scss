@@ -1,0 +1,47 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+html,
+body,
+#root {
+  width: 100vw;
+  width: 100dvw;
+}
+
+html,
+body {
+  height: 100vh;
+  height: 100dvh;
+}
+
+#root,
+.page {
+  min-height: 100vh;
+  min-height: 100dvh;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (max-width: 750px) {
+  main.page {
+    flex-direction: column-reverse;
+  }
+}
