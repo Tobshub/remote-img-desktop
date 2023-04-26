@@ -16,6 +16,28 @@
       "shell": {
         "all": false,
         "open": true
+      },
+      "fs": {
+        "scope": ["$HOME"],
+        "all": false,
+        "readFile": true,
+        "readDir": true,
+        "exists": "true"
+      },
+      "dialog": {
+        "all": false,
+        "open": true
+      },
+      "http": {
+        "scope": ["http://**", "https://**"],
+        "all": true
+      },
+      "path": {
+        "all": true
+      },
+      "clipboard": {
+        "all": false,
+        "readText": true
       }
     },
     "bundle": {
