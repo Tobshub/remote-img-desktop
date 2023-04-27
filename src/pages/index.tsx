@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import RandImage1 from "../assets/rand_image_2.jpg";
-import RandImage2 from "../assets/rand_image_2.jpg";
+import RandImage1 from "@/assets/rand_image_1.jpg";
+import RandImage2 from "@/assets/rand_image_2.jpg";
 
 export default function IndexPage() {
   return (
@@ -11,7 +11,7 @@ export default function IndexPage() {
           <p>Upload images to a Tobsmg server or view the images you have.</p>
           <div className="d-flex gap-2 align-items-center">
             <Link to="/upload" className="btn btn-primary">UPLOAD</Link>
-            <Link to="/images" className="btn btn-outline-info">IMAGES</Link>
+            <Link to="/images" className="btn btn-outline-warning">IMAGES</Link>
             <Link to="/sign-out" className="btn btn-outline-danger">SIGN OUT</Link>
           </div>
         </div>
