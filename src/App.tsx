@@ -5,6 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import IndexPage from "./pages";
+import AuthPage from "./pages/auth";
 import clientToken from "./utils/token";
 
 const router = createBrowserRouter([
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
   },
   {
     path: "auth",
-    element: <>Auth</>,
+    element: <AuthPage />,
   },
   {
     path: "/",
