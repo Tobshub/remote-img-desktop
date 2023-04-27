@@ -1,9 +1,6 @@
-import { invoke } from "@tauri-apps/api/tauri";
-import {
-  createBrowserRouter,
-  redirect,
-  RouterProvider,
-} from "react-router-dom";
+// import { invoke } from "@tauri-apps/api/tauri";
+import React from "react";
+import { createBrowserRouter, redirect, RouterProvider } from "react-router-dom";
 import IndexPage from "./pages";
 import AuthPage from "./pages/auth";
 import clientToken from "./utils/token";

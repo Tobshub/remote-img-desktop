@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import RandImage1 from "@/assets/rand_image_1.jpg";
 import RandImage2 from "@/assets/rand_image_2.jpg";
@@ -10,9 +11,15 @@ export default function IndexPage() {
           <h1>Tobsmg</h1>
           <p>Upload images to a Tobsmg server or view the images you have.</p>
           <div className="d-flex gap-2 align-items-center">
-            <Link to="/upload" className="btn btn-primary">UPLOAD</Link>
-            <Link to="/images" className="btn btn-outline-warning">IMAGES</Link>
-            <Link to="/sign-out" className="btn btn-outline-danger">SIGN OUT</Link>
+            <Link to="/upload" className="btn btn-primary">
+              UPLOAD
+            </Link>
+            <Link to="/images" className="btn btn-outline-warning">
+              IMAGES
+            </Link>
+            <Link to="/sign-out" className="btn btn-outline-danger">
+              SIGN OUT
+            </Link>
           </div>
         </div>
         <div className="d-flex flex-column">
