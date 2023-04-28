@@ -22,9 +22,6 @@ export default function AuthPage() {
     if (errorMessage) setErrorMessage("");
   };
   const loginMut = useLogin(userCreds, [errorMessage, setErrorMessage]);
-  // TODO: implement handle login success
-  // save token
-  // redirect to intened page
   const handleLoginSuccess = (token: string) => {
     clientToken.set(token);
     navigate(intendedUrlPath ?? "/upload");
