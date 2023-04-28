@@ -13,14 +13,19 @@ const router = createBrowserRouter([
   {
     path: "auth",
     element: <AuthPage />,
+    loader: async ({ request }) => {
+      const url = new URL(request.url);
+      const intendedUrlPath = url.searchParams.get("cb");
+      return { intendedUrlPath };
+    },
   },
   {
     path: "/",
     loader: async ({ request }) => {
       // redirect to auth route if not authenticated
       if (!clientToken.get()) {
-        const intended_url = new URL(request.url).pathname;
-        return redirect(`/auth?cb=${encodeURIComponent(intended_url)}`);
+        const intendedUrlPath = new URL(request.url).pathname;
+        return redirect(`/auth?cb=${encodeURIComponent(intendedUrlPath)}`);
       }
       return null;
     },
