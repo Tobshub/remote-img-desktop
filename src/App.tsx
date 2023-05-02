@@ -3,6 +3,7 @@ import React from "react";
 import { createBrowserRouter, redirect, RouterProvider } from "react-router-dom";
 import IndexPage from "./pages";
 import AuthPage from "./pages/auth";
+import UploadPage from "./pages/upload";
 import clientToken from "./utils/token";
 
 const router = createBrowserRouter([
@@ -32,6 +33,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "upload",
+        element: <UploadPage />
       },
       {
         path: "images",
